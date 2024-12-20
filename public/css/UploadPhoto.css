@@ -1,0 +1,130 @@
+/* General Container */
+.upload-photo-container {
+  padding: 40px;
+  background-color: #ffffff; 
+  color: #012030; 
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease;
+}
+
+.upload-photo-container:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; 
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Message Display */
+.upload-message {
+  font-size: 1.2rem;
+  color: #ff6347;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.upload-form {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-label,
+.file-label {
+  font-size: 1.1rem;
+  color: #012030; 
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Inputs & Textarea */
+input[type="file"],
+input[type="text"],
+textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #012030; 
+  background-color: #ffffff; 
+  color: #012030; 
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="file"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #DAFDBA; 
+  background-color: #ffffff;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  height: 120px;
+  border-color: #012030;
+}
+
+/* Button Styles */
+.upload-button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #DAFDBA; 
+  color: #012030; 
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-button:hover {
+  background-color: #a4db83; 
+  transform: translateY(-2px); 
+}
+
+.upload-button:active {
+  transform: translateY(1px);
+}
+
+.upload-button:disabled {
+  background-color: #b0c9a1;
+  cursor: not-allowed;
+}
+
+/* Error & Success Messages */
+.error-message {
+  font-size: 1.1rem;
+  color: #ff4d4d;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.success-message {
+  font-size: 1.1rem;
+  color: #4caf50;
+  text-align: center;
+  margin-top: 20px;
+}
